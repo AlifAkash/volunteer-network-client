@@ -1,0 +1,15 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.links button{
+    cursor: pointer;
+}

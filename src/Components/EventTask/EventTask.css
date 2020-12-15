@@ -1,0 +1,22 @@
+.Event{
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.area{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.text button{
+    outline: none;
+    border: 1px solid black;
+}

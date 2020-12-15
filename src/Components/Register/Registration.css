@@ -1,0 +1,36 @@
+.Registration{
+    text-align: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.form h1{
+    text-align: left;
+}
+
+.form{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    border: 1px solid black;
+    height: 60vh;
+    width: 55vh;
+}
+
+.fields{
+    width: 50vh;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.button{
+    border: 1px solid cyan;
+    outline: none;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+}

@@ -1,0 +1,19 @@
+.Login{
+    text-align: center;
+}
+
+.loginArea{
+    display: inline-block;
+    margin-top: 30px;
+    border: 1px solid black;
+    height: auto;
+    width: 40vh;
+}
+
+.loginArea button{
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid black;
+}
