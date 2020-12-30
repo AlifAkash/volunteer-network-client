@@ -13,3 +13,32 @@
 .links button{
     cursor: pointer;
 }
+/* //#6495ED */
+
+.login{
+    background-color: dodgerblue;
+    color: whitesmoke;
+    border-radius: 25px;
+    border: 1px solid black;
+    height: 2rem;
+    width: 5rem;
+    outline: none;
+}
+
+.login:hover{
+    background: deepskyblue;
+}
+
+.admin{
+    background-color: gray;
+    color: white;
+    border-radius: 25px;
+    border: 1px solid black;
+    height: 2rem;
+    width: 5rem;
+    outline: none;
+}
+
+.admin:hover{
+    background: dimgray;
+}

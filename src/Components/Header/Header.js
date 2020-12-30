@@ -1,9 +1,13 @@
 import React from 'react';
 import "./Header.css";
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import logo from "../../volunteer-network-main/logos/Group 1329.png";
 
 const Header = () => {
+    const history = useHistory();
+    const handleLogin = () =>{
+        history.push("/login");
+    }
     return (
         <div className="Header">
             <div className="logo">
@@ -20,8 +24,8 @@ const Header = () => {
                 <Link style={{textDecoration : "none", color : "black"}} to="/donation">Donation</Link>
                 <Link style={{textDecoration : "none", color : "black"}} to="/events">Events</Link>
                 <Link style={{textDecoration : "none", color : "black"}} to="/blog">Blog</Link>
-                <button>Login</button>
-                <button>Admin</button>
+                <button style={{outline:"none"}} onClick={handleLogin} className="login">Login</button>
+                <button style={{outline:"none"}} className="admin">Admin</button>
             </div>
         </div>
     );
