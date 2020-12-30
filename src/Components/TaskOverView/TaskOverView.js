@@ -4,13 +4,13 @@ import EventTask from '../EventTask/EventTask';
 
 const TaskOverView = () => {
     const [userDisplayData, setUserDisplayData] = useState([]);
-    const [registeredTask, setRegisteredTask] = useContext(RegisteredUserContext);
+    const [registeredTask] = useContext(RegisteredUserContext);
     console.log(registeredTask);
     useEffect(() => {
-        fetch("http://localhost:5000/registeredTask?email="+registeredTask.email)
+        fetch("https://volunteer-node-deply.herokuapp.com/registeredTask?email="+registeredTask.email)
         .then(result => result.json())
         .then(data => setUserDisplayData(data));
-    },[])
+    },[registeredTask])
     return (
         <div>
             {

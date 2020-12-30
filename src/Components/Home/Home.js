@@ -7,7 +7,7 @@ const Home = () => {
     const [tasks, setTasks] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/volunteerTasks")
+        fetch("https://volunteer-node-deply.herokuapp.com/volunteerTasks")
             .then(result => result.json())
             .then(data => setTasks(data))
     }, [])

@@ -1,10 +1,9 @@
 import React from 'react';
-import fakeData from '../../FakeData';
 
 const Admin = () => {
 
     const handleAddProduct = () => {
-        fetch("http://localhost:5000/addVolunteerTask", {
+        fetch("https://volunteer-node-deply.herokuapp.com/addVolunteerTask", {
             method: "POST",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify()
@@ -16,7 +15,8 @@ const Admin = () => {
 
     return (
         <div style={{textAlign: "center"}}>
-            <button onClick={handleAddProduct}>add Task</button>
+            <h1>Admin panel coming soon....</h1>
+            {/* <button onClick={handleAddProduct}>add Task</button> */}
         </div>
     );
 };

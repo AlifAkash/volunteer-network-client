@@ -3,7 +3,7 @@ import "./EventTask.css";
 import taskLogo from "../../volunteer-network-main/images/extraVolunteer.png";
 
 const EventTask = (props) => {
-    const { name, task, date } = props.item;
+    const { task, date } = props.item;
     return (
         <div className="Event">
             <div className="area">

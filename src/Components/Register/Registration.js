@@ -12,7 +12,7 @@ const Registration = () => {
     const history = useHistory();
 
     useEffect(() => {
-        fetch("http://localhost:5000/volunteerTask/"+key)
+        fetch("https://volunteer-node-deply.herokuapp.com/volunteerTask/"+key)
         .then(res=> res.json())
         .then(data => setSingleTask(data))
     },[key]);
@@ -31,7 +31,7 @@ const Registration = () => {
             setRegisteredTask(newRegisteredTask);
             console.log(registeredTask);
         if(registeredTask.email && registeredTask.task){
-            fetch("http://localhost:5000/registeredUserTask", {
+            fetch("https://volunteer-node-deply.herokuapp.com/registeredUserTask", {
                 method:"POST",
                 headers: {
                     "Content-Type" : "application/json"
